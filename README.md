@@ -36,6 +36,23 @@ SMS Management Application API is a simple appliaction that enables users to sen
 
      `npm run test`
 
+** Run with Docker
+
+You should have docker install in your machine. If you have docker set up go
+ahead and spin the server by:
+
+* Build the image
+  
+    `docker build -t sms-manage-docker .`
+
+* Run docker image
+
+    `docker run -it -p 9000:5000 -v $(pwd):/app sms-manage-docker`
+
+* Access the API on port `9000`
+
+     `http://localhost:9000/`
+
 **API features**
 * creating contacts
 * sending and recieving sms
